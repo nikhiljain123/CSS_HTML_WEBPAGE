@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Website </title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS RESET */
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/back.jpg');
+        font-family: 'The Nautigal', 'cursive','Ubuntu', sans-serif;
+    }
+    .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 23px;
+            top: 20px;
+            color: rgb(15, 224, 252);
+    }
+    .mid{
+            display:block;
+            width: 50%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(240, 6, 115); */
+            text-align: center; 
+    }
+    .right{
+            position: absolute;
+            display: inline-block;
+            right: 23px;
+            top: 20px;
+            /* border: 2px solid rgb(97, 224, 24); */
+    }
+    .nav{
+        display: inline-block;
+    }
+    .nav li{
+        display: inline-block;
+
+    }
+    .nav li a{
+        color: rgb(9, 248, 188);
+        text-decoration: none;
+        padding: 23px 34px;
+        font-size: 25px;
+    }
+    .nav li a:hover ,.nav li a:active {
+        text-decoration: underline;
+        color: gray;
+    }
+    .left img{
+        width:90px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        font-family: 'The Nautigal', 'cursive','Ubuntu', sans-serif;
+         margin: 12px 10px;
+        background-color: rgba(177, 169, 169, 0.945);
+        color: rgb(9, 247, 215);
+        padding: 4px 15px;
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(43, 42, 42);
+    }
+    .container{
+        padding: 27px 46px;
+        margin: 64px 79px;
+        color: rgb(243, 241, 241);
+        border: 2px solid white;
+        width: 33%;
+        border-radius: 6px;
+    }
+    .formgroup input{
+           font-size: 23px; 
+           text-align: center;
+           display: block;
+           width: 346px;
+           padding: 6px;
+           margin: 6px auto ;
+           border: 2px solid grey;
+           border-radius: 3px;
+           font-family: 'The Nautigal', 'cursive','Ubuntu', 'sans-serif';
+        }
+        .container h1{
+            text-align: center;
+            color: rgb(4, 63, 145);
+        }
+        .container button{
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+                <div>Happy Fitness</div>
+        </div>
+        <!-- mid box for navbars -->
+        <div class="mid">
+            
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Fitness Calculator</a></li>
+                <li><a href="#" >Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym in Banswara</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
